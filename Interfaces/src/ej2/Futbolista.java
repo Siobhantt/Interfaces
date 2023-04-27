@@ -40,8 +40,9 @@ public int compareTo(Object o) {
 		result = -1;
 	}else if(this.numeroCamiseta>j1.numeroCamiseta){
 		result = 1;
-	}else if (j1.equals(j1)) {
-		result =  0;
+	}
+	if(this.numeroCamiseta == j1.numeroCamiseta) {
+		result = this.nombre.compareTo(j1.nombre);
 	}
 	return result;
 }
