@@ -17,8 +17,8 @@ public Futbolista(int numeroCamiseta, String nombre, int edad, int numGoles) {
 public String toString() {
 	String mensaje;
 	mensaje = "Jugador :" + nombre + "\n"
-			+ "Edad: " + edad + "\n"
 			+ "Numero de camiseta: " + numeroCamiseta + "\n"
+			+ "Edad: " + edad + "\n"
 			+ "Numero de goles: " + numGoles;
 	return mensaje;
 }
@@ -40,9 +40,9 @@ public int compareTo(Object o) {
 		result = -1;
 	}else if(this.numeroCamiseta>j1.numeroCamiseta){
 		result = 1;
-	}else if(this.numeroCamiseta == j1.numeroCamiseta && !this.nombre.equals(j1.nombre)) {
-		result = -1;
+	}else if (j1.equals(j1)) {
+		result =  0;
 	}
-	return 0;
+	return result;
 }
 }
