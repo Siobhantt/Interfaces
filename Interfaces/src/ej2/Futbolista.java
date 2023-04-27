@@ -1,6 +1,6 @@
 package ej2;
 
-public class Futbolista {
+public class Futbolista implements Comparable{
 private int numeroCamiseta;
 private String nombre;
 private int edad;
@@ -23,6 +23,18 @@ public String toString() {
 	return mensaje;
 }
 
+public boolean equals(Object obj) {
+	boolean igual=false;
+	Futbolista jugador = (Futbolista) obj; 
+	if(this.numeroCamiseta == jugador.numeroCamiseta && this.nombre.equals(jugador.nombre)) {
+		igual = true;
+	}
+	return igual;
+}//fin del metodo equals
 
-
+@Override
+public int compareTo(Object o) {
+	// TODO Auto-generated method stub
+	return 0;
+}
 }
