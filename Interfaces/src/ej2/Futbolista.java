@@ -34,7 +34,15 @@ public boolean equals(Object obj) {
 
 @Override
 public int compareTo(Object o) {
-	// TODO Auto-generated method stub
+	int result =0;
+	Futbolista j1 = (Futbolista) o;
+	if(this.numeroCamiseta<j1.numeroCamiseta ) {
+		result = -1;
+	}else if(this.numeroCamiseta>j1.numeroCamiseta){
+		result = 1;
+	}else if(this.numeroCamiseta == j1.numeroCamiseta && !this.nombre.equals(j1.nombre)) {
+		result = -1;
+	}
 	return 0;
 }
 }
