@@ -25,7 +25,7 @@ public class Gato extends AnimalDomestico {
 	}
 	
 	public void toserBolaPelo() {
-		
+		System.out.println("PUUUUACK --> * ");
 	}
 	
 	@Override

@@ -1,5 +1,5 @@
 package ej3;
 
-public class InstalacionDeportiva {
-
+public interface InstalacionDeportiva {
+public void getTipoDeInstalacion();
 }

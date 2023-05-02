@@ -1,5 +1,5 @@
 package ej3;
 
-public class Edificio {
-
+public interface Edificio {
+public void getSuperficieEdificio();
 }
