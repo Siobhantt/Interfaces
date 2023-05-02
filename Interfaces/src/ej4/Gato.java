@@ -19,13 +19,18 @@ public class Gato extends AnimalDomestico {
 	public boolean hacerCaso() {
 		boolean obedece = false;
 		double aleatorio= Math.random();
-		if(aleatorio<=0.5) {
+		if(aleatorio>=0.95) {
 			obedece = true;
 		}
-		return super.hacerCaso();
+		return obedece;
 	}
 	
 	public void toserBolaPelo() {
 		
+	}
+	
+	@Override
+	public String toString() {
+		return  super.toString();
 	}
 }

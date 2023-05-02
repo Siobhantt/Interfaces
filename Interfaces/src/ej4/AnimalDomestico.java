@@ -37,4 +37,11 @@ public class AnimalDomestico implements Animal{
 		}
 		return obedece;
 	}
+	
+	public String toString() {
+		return "Nombre: " + nombre + "\n"
+	+"Raza: " + raza + "\n" 
+	+"Peso: " + peso + "\n"
+	+"color: " + color + "\n";
+	}
 }

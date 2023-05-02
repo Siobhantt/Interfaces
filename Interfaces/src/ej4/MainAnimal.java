@@ -25,7 +25,7 @@ public class MainAnimal {
 				break;
 			case 2:
 				Noa.toString();
-				ying.hacerRuido();
+				Noa.hacerRuido();
 				instruccion();
 				System.out.println(Noa.hacerCaso());
 				break;

@@ -23,4 +23,11 @@ public class Perro extends AnimalDomestico {
 	public void sacarPaseo() {
 		
 	}
+
+	@Override
+	public String toString() {
+		return  super.toString();
+	}
+	
+	
 }
