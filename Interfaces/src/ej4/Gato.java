@@ -6,12 +6,11 @@ public class Gato extends AnimalDomestico {
 	}
 	
 	public Gato(String nombre, String raza, double peso, String color) {
-		super();
+		super(nombre, raza, peso, color);
 	}
 
 	@Override
 	public void hacerRuido() {
-		super.hacerRuido();
 		System.out.println("¡Miau!");
 	}
 

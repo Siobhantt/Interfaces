@@ -20,14 +20,21 @@ public class MainAnimal {
 				ying.toString();
 				ying.hacerRuido();
 				instruccion();
-				System.out.println(ying.hacerCaso());
-				
+				if(ying.hacerCaso()==false) {
+					ignorando();
+					}else {
+						System.out.println("¡<3!");
+					}
 				break;
 			case 2:
 				Noa.toString();
 				Noa.hacerRuido();
 				instruccion();
-				System.out.println(Noa.hacerCaso());
+				if(Noa.hacerCaso()==false) {
+				ignorando();
+				}else {
+					System.out.println("¡<3!");
+				}
 				break;
 			}
 			System.out.println();
@@ -49,5 +56,8 @@ public class MainAnimal {
 		int haz = (int) (Math.random() * instruccion.length);
 		
 		System.out.println(instruccion[haz]);
+	}
+	public static void ignorando() {
+		System.out.println("Ignorandote...zZz");
 	}
 }

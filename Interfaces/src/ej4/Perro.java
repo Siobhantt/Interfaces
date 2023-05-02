@@ -6,22 +6,26 @@ public class Perro extends AnimalDomestico {
 	}
 	
 	public Perro(String nombre, String raza, double peso, String color) {
-		super();
+		super(nombre, raza,peso,color);
 	}
 
 	@Override
 	public void hacerRuido() {
-		super.hacerRuido();
 		System.out.println("¡Guau!");
 	}
 
 	@Override
 	public boolean hacerCaso() {
-		return super.hacerCaso();
+		boolean obedece = false;
+		double aleatorio= Math.random();
+		if(aleatorio<=0.9) {
+			obedece = true;
+		}
+		return obedece;
 	}
 	
 	public void sacarPaseo() {
-		
+		System.out.println("Paseando... (:");
 	}
 
 	@Override

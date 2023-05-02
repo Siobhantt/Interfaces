@@ -1,11 +1,22 @@
 package ej4;
 
-public class AnimalDomestico implements Animal{
-	String nombre;
-	String raza;
-	double peso;
-	String color;
+public abstract class AnimalDomestico implements Animal{
+	String nombre="";
+	String raza="";
+	double peso=0;
+	String color="";
 	
+	public AnimalDomestico() {
+		
+	}
+	
+	public AnimalDomestico(String nombre, String raza, double peso, String color) {
+		this.nombre = nombre;
+		this.raza = raza;
+		this.peso = peso;
+		this.color = color;
+	}
+
 	//=========================================
 	@Override
 	public void comer() {
@@ -20,23 +31,14 @@ public class AnimalDomestico implements Animal{
 	}
 
 	@Override
-	public void hacerRuido() {
-		// TODO Auto-generated method stub
-		
-	}
-	//==============================
+	public abstract void hacerRuido();
+	
+	
 	public void vacunar() {
 		
 	}
 	
-	public boolean hacerCaso() {
-		boolean obedece=false;
-		double aleatorio= Math.random();
-		if(aleatorio>=0.1) {
-			obedece = true;
-		}
-		return obedece;
-	}
+	public abstract boolean hacerCaso();
 	
 	public String toString() {
 		return "Nombre: " + nombre + "\n"
