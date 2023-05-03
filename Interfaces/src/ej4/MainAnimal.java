@@ -10,7 +10,6 @@ public class MainAnimal {
 		int opcion=0; 
 		Perro ying = new Perro("Ying", "Poodle", 10.0,"Blanco");
 		Gato Noa = new Gato("Noa", "Calle", 5.0,"Gris");
-		
 		do {
 			menu();
 			opcion = lee.nextInt();
