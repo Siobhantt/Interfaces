@@ -19,4 +19,10 @@ int numOficinas=0;
 		return superficie;
 	}
 
+	@Override
+	public String toString() {
+		return "Edificio \n"+   
+				"Numero de oficinas disponibles: " + numOficinas + "\n";
+	}
+
 }

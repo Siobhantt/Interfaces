@@ -1,12 +1,24 @@
 package ej1;
-
-public class Socio implements Comparable {
-private int id;
-private String nombre;
-private int edad;
-
 /**
- * 
+ * Clase que representa un socio, implementa la interfaz Comparable
+ * @author Luisa
+ *
+ */
+public class Socio implements Comparable {
+	/**
+	 * Atributo de id del socio
+	 */
+private int id;
+/**
+ * Atributo de nombre del socio
+ */
+private String nombre;
+/**
+ * Atributo de la edad del socio
+ */
+private int edad;
+/**
+ * Constructor con parametros
  * @param id
  * @param nombre
  * @param edad
@@ -17,6 +29,9 @@ public Socio(int id, String nombre, int edad) {
 	this.nombre = nombre;
 	this.edad = edad;
 }
+/**
+ * Metodo toString con las caracteristicas del socio
+ */
 @Override
 public String toString() {
 	String res="";
@@ -27,7 +42,7 @@ public String toString() {
 }
 @Override
 /**
- * Esto se basa en algun parametro para comparar en ascendente o descendente segun la configuracion del metodo
+ * Sirve para comparar el id del socio para luego ordenarlo de forma ascendente
  */
 public int compareTo(Object o) {
 	int result =0;

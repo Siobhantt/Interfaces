@@ -1,5 +1,7 @@
 package ej3;
 
+import java.util.Arrays;
+
 public class Situacion {
 
 	public static void main(String[] args) {
@@ -12,7 +14,17 @@ public class Situacion {
 		EdificioOficinas e1 = new EdificioOficinas(300);
 		EdificioOficinas e2 = new EdificioOficinas(500);
 		
+		arrayPoli[0] = a1;
+		arrayPoli[1] = a2;
+		arrayEdf[0] = e1;
+		arrayEdf[1] = e2;
 		
+	for(Polideportivo a: arrayPoli) {
+		System.out.println(a);
+	}
+	for(EdificioOficinas a: arrayEdf) {
+		System.out.println(a);
+	}
 	}
 
 }

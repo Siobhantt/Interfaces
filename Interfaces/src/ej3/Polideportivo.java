@@ -24,7 +24,15 @@ public class Polideportivo implements InstalacionDeportiva, Edificio {
 	@Override
 	public double getSuperficieEdificio() {	
 	double superficie=0;
+	superficie = this.superficie;
 	return superficie;
+	}
+
+	@Override
+	public String toString() {
+		return "Polideportivo \n"
+				+ "Nombre:" + nombre + "\n"
+	+"Superficie: " + superficie + "\n";
 	}
 
 }
