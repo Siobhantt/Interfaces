@@ -6,6 +6,10 @@ package ej3;
  */
 public class Polideportivo implements InstalacionDeportiva, Edificio {
 	/**
+	 * Atributo con el tipo del polideportivo
+	 */
+	String tipo="";
+	/**
 	 * Atributo del nombre del polideportivo
 	 */
 	String nombre="";
@@ -23,17 +27,26 @@ public class Polideportivo implements InstalacionDeportiva, Edificio {
  * @param nombre del polideportivo
  * @param superficie del polideportivo
  */
-	public Polideportivo(String nombre, double superficie) {
+	public Polideportivo(String tipo,String nombre, double superficie) {
+		this.tipo = tipo;
 		this.nombre = nombre;
 		this.superficie = superficie;
 	}
 /**
- * Metodo que obtiene el tipo de instalacion
+ * Metodo que obtiene el un numero segun el tipo de instalacion
+ * 
  */
 	@Override
 	public int getTipoDeInstalacion() {
-		int tipo=0; 
-	return tipo;
+		int tipoN=0; 
+		if(this.tipo.equals("Piscina")) {
+			tipoN=1;
+		}else if(this.tipo.equals("Sala")) {
+			tipoN=2;
+		}else if(this.tipo.equals("Pista")) {
+			tipoN=3;
+		}
+	return tipoN;
 	}
 /**
  * Metodo que obtiene la superficie del edificio
@@ -50,7 +63,8 @@ public class Polideportivo implements InstalacionDeportiva, Edificio {
 	@Override
 	public String toString() {
 		return "Polideportivo \n"
-				+ "Nombre:" + nombre + "\n"
+				+ "Tipo: " + tipo + "\n"
+				+ "Nombre: " + nombre + "\n"
 	+"Superficie: " + superficie + "\n";
 	}
 

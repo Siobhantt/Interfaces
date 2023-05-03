@@ -17,32 +17,35 @@ public class MainAnimal {
 			
 			switch(opcion) {
 			case 1:
+				ying.vacunar();
 				ying.toString();
+				ying.sacarPaseo();
 				ying.hacerRuido();
 				instruccion();
 				if(ying.hacerCaso()==false) {
 					ignorando();
 					}else {
 						System.out.println("¡<3!");
+						System.out.println(ying.nombre + " te obedece.");
 					}
+				
 				break;
 			case 2:
+				Noa.vacunar();
 				Noa.toString();
+				Noa.toserBolaPelo();
 				Noa.hacerRuido();
 				instruccion();
 				if(Noa.hacerCaso()==false) {
 				ignorando();
 				}else {
 					System.out.println("¡<3!");
+					System.out.println(Noa.nombre + " te obedece.");
 				}
 				break;
 			}
 			System.out.println();
 		}while(opcion!=3); 
-		
-
-	
-	
 	}
 
 	public static void menu() {
